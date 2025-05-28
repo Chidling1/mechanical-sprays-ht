@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +23,9 @@ body {
 }
 
 .container {
-    width: 90%;
+
+    justify-items: center;
+    width: 75%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -56,7 +59,7 @@ body {
 /* Navigation */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: transparent
     color: #333;
@@ -64,9 +67,15 @@ body {
     position: relative;
 }
 
-.navbar .logo {
+.navbar .logo, .minilogo {
     max-height: 2.5rem;
  }
+
+ .minilogo {
+    display: none;
+    max-height: 2.5rem;
+    margin: 0 auto;
+}
 
 .hero .container p {
     font-size: 1.2rem;
@@ -191,7 +200,7 @@ svg {
     text-align: center;
     padding: 12rem 1rem 0 1rem;
     /* background-color: #fff; */
-    background: linear-gradient(-45deg, #f8498c, #1f94be, #17c79e, deepskyblue);
+    background: linear-gradient(-45deg, #f8498c, #1f94be, #17c79e, hsl(197, 88%, 58%));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     min-height: 70vh;
@@ -217,19 +226,50 @@ svg {
     margin-top: 5rem;
     font-size: 4rem;
     color: #fff;
-/*    color: deepskyblue; */
+/*    color: hsl(197, 88%, 58%); */
     mix-blend-mode: multiply, screen;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
 }
+
 
 .hero p {
     font-size: 1.2rem;
     margin: 1rem 0;
 }
 
+.hero-screeny {
+
+    top: -5rem;
+    position: relative;
+    /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%); */
+    text-align: center;
+    padding: 12rem 1rem 0 1rem;
+    /* background-color: #fff; */
+    background: linear-gradient(-45deg, rgb(54,190,242), rgb(12, 24, 59), pink);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 70vh;
+    }
+
+.hero-screeny h1 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: #fff;
+/*    color: hsl(197, 88%, 58%); */
+    mix-blend-mode: multiply, screen;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+}
+
+.hero-screeny p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
 
 .btn-primary {
-    background-color: deepskyblue;
+    background-color: hsl(197, 88%, 58%);
     color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -253,7 +293,7 @@ svg {
 .product h3 {
     font-size: 2rem;
     margin: 0.75rem auto;
-    color: deepskyblue;
+    color: hsl(197, 88%, 58%);
 }
 
 /* Product Section Grid */
@@ -262,21 +302,27 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .product-item {
+    display: flex;
+    align-items: center;
     padding: 2rem;
     margin: auto;
     border-radius: 20px;
-    min-height: 10vh;
+    width: 100%;
+    /* min-height: 10vh;
+    width: 70vh;
+    min-width: 70vh; */
     text-align: center;
-    position: relative;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out, scale 0.7s ease-out;
     transform-origin: center;
 }
+
+
 
 .product-item.visible {
     opacity: 1;
@@ -284,10 +330,11 @@ svg {
 }
 
 .product-item img {
+    flex: 1 1 0;
     object-fit: cover;
-    max-width: 80%;
-    min-height: 40vh;
-    height: auto;
+    max-width: 30%;
+    min-height: 5vh;
+    max-height: 40vh;
     margin: 0 auto;
     display: block;
     transition: transform 0.5s ease-in-out;
@@ -296,7 +343,7 @@ svg {
 .product-item img:last-of-type {
     object-fit: contain;
     max-width: 80%;
-    min-height: 40vh;
+    min-height: 10vh;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -307,31 +354,39 @@ svg {
     transform: scale(1.05);
 }
 
+.description {
+    flex: 4 1 0;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
 .badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgb(206, 76, 76);
+    top: -6px;
+    left: -6px;
+    background-color: rgb(255, 90, 90);
     color: #fff;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.3rem;
     font-size: 0.7rem;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50%;
     z-index: 1;
 }
 
 
 
 /* Testimonials Section */
-.company {
+.about {
     background-color: #f0f8ff;
 /*  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%); */
     padding: 4rem 0;
     text-align: center;
 }
 
-.company h2 {
-    color: deepskyblue;
+.about h2 {
+    color: hsl(197, 88%, 58%);
     font-size: 2rem;
 }
 
@@ -370,13 +425,32 @@ svg {
 
     width: 50%;
     max-width: 1200px;
-    margin: 1rem auto;
+    margin: 0.3rem auto;
+}
+
+.provozovna {
+    font-weight: 600;
+    
 }
 
 /* Responsive Navigation */
 /* Responsive Navigation */
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
+    .logo {
+        display:  none;
+    }
+    .minilogo {
+        display:  block
+    }
+}
+@media (max-width: 850px) {
+    .logo {
+        display:  block
+    }
+    .minilogo {
+        display:  none
+    }
     .navbar {
         font-size: larger;
         align-items: center;
@@ -413,13 +487,13 @@ svg {
         }
      }
 
- 
-
-
     .logo {
         margin: 2rem auto;
     }
 
+    .badge {
+        display: none;
+    }
     .nav-links {
         align-items: center;
         justify-content: center;
@@ -465,4 +539,169 @@ svg {
         z-index: 20;
     }
 
+.product-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 20px;
+    min-height: 10vh;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out, scale 0.7s ease-out;
+    transform-origin: center;
+}
+
+.product-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.product-item img {
+    object-fit: cover;
+    max-width: 80%;
+    min-height: 40vh;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-item img:last-of-type {
+    object-fit: contain;
+    max-width: 80%;
+    min-height: 40vh;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+
+}
+
+/* Screeny styles */
+
+.black
+{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    background-color: hsl(345, 6%, 13%);
+    width: 100%;
+
+}
+
+
+.black img {
+    display: flex;
+    object-fit: contain;    
+    max-width: 100%;
+    min-width: 40%;
+    max-height: 286px;
+    margin: 4rem 4rem;
+    z-index: 20;
+}
+
+.black svg {
+    margin: 1rem;
+}
+
+.screeny-hero {
+    
+    padding: 2rem 0;
+}
+
+
+.screeny-hero h3 {
+    font-size: 3rem;
+    color: hsl(197, 88%, 58%);
+}
+
+.screeny-hero h4 {
+    font-size: 1.5rem;
+        
+}
+
+.hero-image {
+    margin-bottom: 2rem;
+}
+.long-divider {
+
+    height: 2px;
+    width: 95%;
+    background: linear-gradient(to right, rgb(54,190,242), rgb(38,70,162), pink);
+    margin: 1rem auto 1rem auto;
+    
+}
+
+.container span {
+    color: hsl(197, 88%, 58%);
+    font-weight: 700;
+}
+
+
+.logo-wrapper {
+    border: 1px solid blue;
+    min-width: 45%;
+    display: flex;
+ }
+
+.logo-wrapper img {
+   border: 1px solid greenyellow;
+   flex: 1 3 0;
+}
+
+ .extender {
+    margin: 10px;
+    border : 1px solid red;
+    flex: 3 1 0;
+ }
+
+
+.indent {
+   
+}
+
+.bottles {
+    position: static;
+    display: flex;
+
+}
+.vendors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.vendor {
+    display: block
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: auto;
+    background-color: hotpink;
+    border-radius: 48px;
+}
+.vendor a {
+    font-size: 1.7em;
+    text-decoration: none;
+    color: rgb(38,70,162);
+    position: relative;
+    padding: 0.3rem 0.3rem;
+}
+
+.vendor:hover {
+    border: 1px solid rgb(38,70,162);
 }
