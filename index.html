@@ -11,7 +11,7 @@
 </head> 
 
 <body>
-<div class="bgwrap">
+    <div class="bgwrap">
     <!-- Navigation -->
          <nav class="navbar">
             <img src="assets/ms-logo.png" alt="logo" class="logo">
@@ -19,44 +19,71 @@
 
                 <ul class="nav-links">
                     <li><a href="#hero">Domů</a></li>
-                    <li><a href="#product">Produkty</a></li>
                     <li><a href="#about">O společnosti</a></li>
+                    <li class="dropdown">
+        <a href="#product" id="products-nav">Produkty</a>
+        <ul class="dropdown-menu">
+            <li><a href="/pages/screeny.html" class="dropdown-link">SCREENY</a></li>
+            <li class="dropdown-span"><span>PRODUKTY NAŠICH PARTNERŮ:</span></li>
+            <li><a href="/pages/partners-products.html" class="dropdown-link">Skleněné obaly</a></li>
+            <li><a href="/pages/partners-products.html#plastic-container" class="dropdown-link">Plastové obaly</a></li>
+            <li><a href="/pages/partners-products.html#cap" class="dropdown-link">Uzávěry</a></li>
+        </ul>
+    </li>
                     <li><a href="#contact">Kontakt</a></li>
                     <li>
                         
                         <a href="pages/screeny.html"><div class="badge"></div>SCREENY</a></li>
-
-                </ul>
-                <div class="socials">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 26 26"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md --><path fill="currentColor" d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"/></svg></a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 26 26"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md --><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978c.401 0 .955.042 1.468.103a9 9 0 0 1 1.141.195v3.325a9 9 0 0 0-.653-.036a27 27 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.7 1.7 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103l-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647"/></svg></a>
+                        
+                    </ul>
+                    <div class="socials">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 26 26"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md --><path fill="currentColor" d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 26 26"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md --><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978c.401 0 .955.042 1.468.103a9 9 0 0 1 1.141.195v3.325a9 9 0 0 0-.653-.036a27 27 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.7 1.7 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103l-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647"/></svg></a>
                 </div>
                 <div class="lang">
                 <a href="#">CS</a> 
                 <a href="en/index.html">EN</a>
-                </div>
-     
-                
+            </div>
+            
+            
         </nav> 
-         <div class="hamburger" id="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-2V6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4m5-3h.01M18 9h.01M18 5h.01M21 3h.01M21 7h.01M21 11h.01M10 7h1"/></svg>
+        
+        <div class="hamburger" id="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-2V6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4m5-3h.01M18 9h.01M18 5h.01M21 3h.01M21 7h.01M21 11h.01M10 7h1"/></svg>
         </div>
-       
-    <!-- Hero Section -->
-    <section id="hero" class="hero"> 
-        <div class="container">
-            <div class="hero-content">
-                <h1>MECHANICAL SPRAYS</h1>
-                <p>Výrobce a dodavatel mechanických rozprašovačů</p>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero"> 
+            <div class="container">
+                <div class="hero-content">
+                    <h1>MECHANICAL SPRAYS</h1>
+                    <p>Výrobce a dodavatel mechanických rozprašovačů</p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/ms-hero-product-6.png" alt="Hero Image">
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/ms-hero-product-5.png" alt="Hero Image">
-            </div>
-        </div>
-    
-    </section>
+        </section>
+    </div>    
+        
 
-</div>    
+    <!-- Company info Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>O společnosti</h2>
+            <div class="divider"></div>
+
+            <div class="comp">
+                <p>Působíme na trhu od roku 2016. Za tu dobu jsme se stali partnery pro dodávky mechanických rozprašovačů pro mnohá odvětví s hlavním těžištěm ve farmaceutickém a kosmetickém průmyslu.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="/assets/dummy-portrait.jpg" alt="Lukáš Kaspara" class="portrait">
+            <div class="comp">
+                <p>Jednatel společnosti Lukáš Kašpara</p>
+        </div>
+    </section>
+    
     <!-- Our Product Section -->
     <section id="product" class="product">
         <div class="container">
@@ -97,16 +124,6 @@
     </section>
 
 
-    <!-- Company info Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>O společnosti</h2>
-            <div class="comp">
-                <p>Působíme na trhu od roku 2016. Za tu dobu jsme se stali partnery pro dodávky mechanických rozprašovačů pro mnohá odvětví s hlavním těžištěm ve farmaceutickém a kosmetickém průmyslu.</p>
-            </div>
- 
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer" id="contact">
@@ -134,6 +151,6 @@
         <p>&copy; 2025 Mechanical Sprays s.r.o.</p>
         </div>
     </footer>
-    
+
 </body>
 </html>
