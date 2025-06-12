@@ -1,3 +1,8 @@
+section {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* Product Section */
 .product {
     display: flex;
@@ -46,7 +51,8 @@
 
 svg {
     color: #727272;
-    position: fixed;
+    margin: 1rem;
+
 }
 
 .product-item.visible {
