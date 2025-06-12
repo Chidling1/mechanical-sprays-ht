@@ -507,7 +507,7 @@ svg {
         justify-content: center;
         font-size: xx-large;
         flex-direction: column;
-        row-gap: 2rem;
+        row-gap: 1.5rem;
         width: 100%;
     }
        
@@ -687,7 +687,7 @@ svg {
 .dropdown-menu li, .dropdown-menu li:last-child{
     width: 100%;
     list-style: none;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .dropdown-link {
