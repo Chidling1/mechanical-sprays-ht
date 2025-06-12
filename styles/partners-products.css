@@ -3,6 +3,11 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+section :first-child {
+    margin-top: 0;
+}
+
 /* Product Section */
 .product {
     display: flex;
