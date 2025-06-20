@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     productItems.forEach(item => observer.observe(item));
 });
+

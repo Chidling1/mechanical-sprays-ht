@@ -55,6 +55,7 @@ section :first-child {
 }
 
 svg {
+    position: fixed;
     color: #727272;
     margin: 1rem;
 

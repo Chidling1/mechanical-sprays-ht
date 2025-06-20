@@ -22,6 +22,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .general-content {
     max-width: 1200px;
     display: flex;
@@ -31,12 +32,11 @@ a:hover {
 }
 
 
-.black
-{
+.black {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     padding-top: 3rem;
 
@@ -51,12 +51,11 @@ a:hover {
     width: auto;
 }
 
-.pink
-{
+.pink {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
-    background-color: #ef5192;
+    background-color: #fff;
     width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
@@ -77,39 +76,44 @@ a:hover {
 }
 
 svg {
+    position: fixed;
     margin: 1rem;
-    color: #fff;
-}
-.navigation {
-    background-color: rgb(26, 26, 26);
-}
-.screeny-hero {
-    
-    padding: 2rem 0;
+    color: #7a7a7a;
 }
 
+.navigation {
+    background-color: rgb(255, 255, 255);
+}
+
+.screeny-hero {
+    padding-bottom: 2rem;
+}
 
 .screeny-hero h3 {
     font-size: 3rem;
     color: hsl(197, 88%, 58%);
 }
 
-.screeny-hero h4 {
-    margin-top: 2rem;
+h4 {
+    margin: 2rem auto;
     font-size: 1.5rem;
-        
+
+}
+
+ul {
+    margin-left: 2rem;
 }
 
 .hero-image {
     margin-bottom: 2rem;
 }
-.long-divider {
 
+.long-divider {
     height: 2px;
     width: 90%;
-    background: linear-gradient(to right, rgb(54,190,242), rgb(38,70,162), pink);
-    margin: 8rem auto 1rem auto;
-    
+    background: linear-gradient(to right, rgb(54, 190, 242), rgb(38, 70, 162), pink);
+    margin: 2rem auto;
+
 }
 
 .container {
@@ -130,42 +134,37 @@ h3 {
     margin-bottom: 1rem;
     font-family: "varela round", sans-serif;
     font-weight: 800;
- }
+}
 
- .contact {
+.contact {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 4rem;
     margin: 0 auto;
-    padding: 2rem 0;}
+}
 
-    @media screen and (max-width: 768px) {
-        .contact {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     object-fit: contain;
     justify-content: space-evenly;
     gap: 4rem;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: -6rem;
     min-width: 45%;
     display: flex;
- }
-
-.indent {
-   
 }
-
 
 .vendors {
     display: flex;
@@ -178,22 +177,22 @@ h3 {
 }
 
 .vendor {
-    display: block
-    text-decoration: none;
+    display: block text-decoration: none;
     border: 1px solid #fff;
     padding: 20px;
     margin: auto;
     background-color: hotpink;
     border-radius: 48px;
 }
+
 .vendor a {
     font-size: 1.7em;
     text-decoration: none;
-    color: rgb(38,70,162);
+    color: rgb(38, 70, 162);
     position: relative;
     padding: 0.3rem 0.3rem;
 }
 
 .vendor:hover {
-    border: 1px solid rgb(38,70,162);
+    border: 1px solid rgb(38, 70, 162);
 }
